@@ -70,24 +70,24 @@ keys.addEventListener("click", e => {
             const clear = calculator.querySelector('[data-action=clear]')
             clear.textContent = 'CE'
         }
-    } else {
-        console.log("Not a valid key!")
     }
 })
 
 const calculate = (num1, operand, num2) => {
+    firstNum = parseFloat(num1)
+    secondNum = parseFloat(num2)
     switch(operand) {
         case "add":
-            return parseFloat(num1) + parseFloat(num2);
+            return firstNum + secondNum;
             break;
         case "subtract":
-            return parseFloat(num1) - parseFloat(num2);
+            return firstNum - secondNum;
             break;
         case "multiply":
-            return parseFloat(num1) * parseFloat(num2);
+            return firstNum * secondNum;
             break;
         case "divide":
-            return parseFloat(num1) / parseFloat(num2);
+            return firstNum / secondNum;
             break;
         default:
             return 0
