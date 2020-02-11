@@ -2,6 +2,7 @@ const calculator = document.querySelector(".calculator")
 const keys = calculator.querySelector(".calculator__keys")
 const display = calculator.querySelector(".calculator__display")
 
+// EMPTY COMMENT FOR COMMIT 
 
 keys.addEventListener("click", e => {
     if (e.target.matches("button")) {
